@@ -1,3 +1,25 @@
+# Cómo subir este proyecto
+
+1. Descomprime el ZIP.
+2. En GitHub, abre la página principal del repositorio y elige Add file → Upload files.
+3. Arrastra TODO el contenido extraído, no el ZIP ni la carpeta que lo contiene.
+4. Comprueba que package.json, netlify.toml, public/, scripts/ y netlify/ quedan en la raíz del repositorio.
+5. Guarda con Commit changes en main.
+
+Netlify:
+- Rama: main
+- Base directory: vacío (raíz del repositorio)
+- Package directory: vacío
+- Build command: npm run build
+- Publish directory: dist
+- Functions directory: netlify/functions
+
+El archivo netlify.toml ya contiene la configuración de compilación.
+La conexión con HubSpot y el enlace directo a Calendly están configurados.
+Después de publicar, comprueba un envío real en HubSpot y el botón de reserva.
+
+---
+
 # Folia — HubSpot y Calendly
 
 Proyecto configurado para mantener el diseño original, enviar contactos a HubSpot y reservar una llamada en Calendly.
